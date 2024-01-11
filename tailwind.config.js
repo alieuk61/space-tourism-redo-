@@ -5,7 +5,16 @@ export default {
 		"./src/**/*.{js,jsx,ts,tsx}",
 	],
 	theme: {
-		extend: {},
+		extend: {
+			backdropBlur: {
+				md: '40.774227142333984px',
+			},
+			fontFamily: {
+				'belle': ['Bellefair'],
+				'barlow': ['Barlow'],
+				'barlow-cond': ['"Barlow Condensed"']
+			}
+},
 	},
 	plugins: [],
 }

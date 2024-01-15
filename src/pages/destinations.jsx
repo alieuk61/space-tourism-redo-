@@ -46,4 +46,4 @@ export default function Destinations() {
             </div>
         </section>
     )
-}//THEME IS UNDEFINED RN, FIX IT WHEN YOU SEE THIS, ISSUE IS PROBABLY IN THE CONTEXT FILE
+}

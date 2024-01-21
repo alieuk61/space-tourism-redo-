@@ -5,16 +5,22 @@
 import { useState, createContext } from "react";
 import * as data from 'src/data.json';
 
-export const PageContext = createContext({}) // starts off as an empty object, as we are going to add many items into this object/ (or pretend we are) - doing this to put my skills into play 
+export const PageContext = createContext({}) // starts off as an empty object, as we are going to add many items into this object (or pretend we are) - doing this to put my skills into play 
 
 export default function PageContextProvider({children}) { {/*children being the other components*/}
 
-    const [pageData, setPageData] = useState(undefined);
+    const [destinationsData, setDestinationsData] = useState(data.destinations[0]);
+    const [crewData, setcrewData] = useState(data.crew[0]);
+    const [techData, setTechData] = useState(data.technology[0]);
 
     return(
         <PageContext.Provider value={{ 
-            pageData,
-            setPageData
+            destinationsData,
+            setDestinationsData,
+            crewData,
+            setcrewData,
+            techData,
+            setTechData
         }}>
             {children}
         </PageContext.Provider>

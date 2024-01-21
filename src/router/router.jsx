@@ -7,9 +7,9 @@ import Technology from 'src/pages/technology';
 // Router setup for site navigation
 const router = createBrowserRouter([
 	{ path: "/", element: <Homepage /> },
-	{ path: "destinations", element: <Destinations /> },
-	{ path: "technology", element: <Technology /> },
-	{ path: "crew", element: <Crew /> }
+	{ path: "/destinations", element: <Destinations /> },
+	{ path: "/technology", element: <Technology /> },
+	{ path: "/crew", element: <Crew /> }
 ])
 
 export default router;
